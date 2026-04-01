@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客 | 技术 · 生活 · 创意</title>
+    <meta name="description" content="个人技术博客，分享编程教程、生活技巧、创意项目和图书推荐">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">🌸  Sakura Blog</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/" class="active">首页</a></li>
+                    <li><a href="/archives.html">归档</a></li>
+                    <li><a href="/about.html">关于</a></li>
+                    <li><a href="/rss.xml">RSS</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="菜单">☰</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h1>欢迎来到我的博客</h1>
+                <p class="subtitle">技术探索 · 生活感悟 · 创意实现</p>
+                <div class="hero-links">
+                    <a href="#latest" class="btn-primary">查看最新文章</a>
+                    <a href="/rss.xml" class="btn-secondary">订阅更新</a>
+                </div>
+            </section>
+
+            <section id="latest" class="latest-posts">
+                <h2>最新文章</h2>
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <div class="post-meta">
+                            <span class="category">技术教程</span>
+                            <time datetime="2025-03-25">2025-03-25</time>
+                        </div>
+                        <h3><a href="/posts/getting-started-with-static-blog.html">如何使用静态网站生成器创建个人博客</a></h3>
+                        <p>本文将详细介绍静态网站生成器的工作原理，以及如何使用它快速搭建一个美观、高效的博客系统...</p>
+                        <a href="/posts/getting-started-with-static-blog.html" class="read-more">阅读全文 →</a>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-meta">
+                            <span class="category">生活技巧</span>
+                            <time datetime="2025-03-20">2025-03-20</time>
+                        </div>
+                        <h3><a href="/posts/productivity-hacks-2025.html">2025年提高工作效率的10个实用技巧</a></h3>
+                        <p>在快节奏的现代生活中，如何高效管理时间、保持专注并完成任务？本文将分享经过实践验证的时间管理方法...</p>
+                        <a href="/posts/productivity-hacks-2025.html" class="read-more">阅读全文 →</a>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-meta">
+                            <span class="category">创意项目</span>
+                            <time datetime="2025-03-15">2025-03-15</time>
+                        </div>
+                        <h3><a href="/posts/diy-smart-home.html">DIY智能家居：用Raspberry Pi打造家庭自动化系统</a></h3>
+                        <p>通过树莓派和开源软件，你可以创建自己的智能家居系统，控制灯光、温度、安防等设备，同时保护隐私...</p>
+                        <a href="/posts/diy-smart-home.html" class="read-more">阅读全文 →</a>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-meta">
+                            <span class="category">图书推荐</span>
+                            <time datetime="2025-03-10">2025-03-10</time>
+                        </div>
+                        <h3><a href="/posts/book-review-deep-work.html">《深度工作》读后感：如何在分心的世界中保持专注</a></h3>
+                        <p>Cal Newport的《深度工作》教会我如何创造无干扰的工作环境，提升认知能力，并在专业领域取得卓越成就...</p>
+                        <a href="/posts/book-review-deep-work.html" class="read-more">阅读全文 →</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>博客特点</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <span class="feature-icon">📚</span>
+                        <h3>高质量内容</h3>
+                        <p>每篇文章都经过精心编写，包含实用代码示例和真实案例，拒绝空洞的内容。</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">💻</span>
+                        <h3>代码优先</h3>
+                        <p>所有技术教程都提供可运行的代码片段，并附有详细注释和说明。</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎨</span>
+                        <h3>简洁设计</h3>
+                        <p>极简主义的视觉风格，专注于可读性，快速加载，给你最佳阅读体验。</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🔄</span>
+                        <h3>持续更新</h3>
+                        <p>每周二和周四发布新文章，涵盖技术、生活、创意等多个领域。</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>关于博客</h4>
+                    <p>这是一个专注于技术分享与生活成长的个人博客。我相信通过持续学习和实践，每个人都能成为更好的自己。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="/archives.html">文章归档</a></li>
+                        <li><a href="/about.html">关于我</a></li>
+                        <li><a href="/rss.xml">RSS订阅</a></li>
+                        <li><a href="/tags.html">标签云</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:blog@example.com">blog@example.com</a></li>
+                        <li>GitHub: <a href="https://github.com/your-username">your-username</a></li>
+                        <li>Twitter: <a href="https://twitter.com/your-handle">@your-handle</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sakura Blog. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
