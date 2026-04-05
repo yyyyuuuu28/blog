@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #4a6fa5;
-    --secondary-color: #ff6b6b;
-    --accent-color: #feca57;
+    --primary-color: #6b8c42;
+    --secondary-color: #d4a574;
+    --accent-color: #c5e1a5;
     --text-dark: #2d3748;
     --text-light: #718096;
     --bg-light: #f8fafc;
@@ -351,4 +351,46 @@ header {
         padding: 0.7rem 1.3rem;
         font-size: 0.9rem;
     }
+}
+
+/* Avocado Theme Enhancements */
+.logo a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #6b8c42 0%, #8bc34a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero {
+    background: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%);
+    border-radius: 20px;
+    margin: 2rem 0;
+    padding: 4rem 2rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6b8c42 0%, #8bc34a 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(107, 140, 66, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5a7a3a 0%, #7cb342 100%);
+    box-shadow: 0 6px 20px rgba(107, 140, 66, 0.4);
+}
+
+.post-card {
+    border-top: 4px solid #8bc34a;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.footer {
+    background: linear-gradient(135deg, #33691e 0%, #558b2f 100%);
 }
