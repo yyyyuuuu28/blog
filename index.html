@@ -3,142 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的博客 | 技术 · 生活 · 创意</title>
-    <meta name="description" content="个人技术博客，分享编程教程、生活技巧、创意项目和图书推荐">
+    <title>My Blog</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">🥑  Avocado Blog</a>
-            </div>
+    <header>
+        <div class="container header-container">
+            <div class="logo"><a href="index.html">My Blog</a></div>
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html" class="active">首页</a></li>
-                    <li><a href="archives.html">归档</a></li>
-                    <li><a href="about.html">关于</a></li>
-                    <li><a href="rss.xml">RSS</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn" aria-label="菜单">☰</button>
+            <button class="mobile-menu-btn">&#9776;</button>
         </div>
     </header>
 
-    <main class="main">
-        <div class="container">
-            <section class="hero">
-                <h1>欢迎来到 🥑 Avocado Blog</h1>
-                <p class="subtitle">像牛油果一样，内外兼修，营养丰富，百搭实用</p>
-                <div class="hero-links">
-                    <a href="#latest" class="btn-primary">🚀 查看最新文章</a>
-                    <a href="rss.xml" class="btn-secondary">📡 订阅更新</a>
-                </div>
-            </section>
+    <main class="container">
+        <section class="hero">
+            <h1>My Blog</h1>
+            <p class="subtitle">Welcome to my blog where I share my thoughts and experiences.</p>
+            <div class="hero-links">
+                <a href="posts/ielts-experience.html" class="btn-primary">Read Latest</a>
+                <a href="about.html" class="btn-secondary">About Me</a>
+            </div>
+        </section>
 
-            <section id="latest" class="latest-posts">
-                <h2>最新文章</h2>
-                <div class="posts-grid">
-                    <article class="post-card">
-                        <div class="post-meta">
-                            <span class="category">技术教程</span>
-                            <time datetime="2025-03-25">2025-03-25</time>
-                        </div>
-                        <h3><a href="posts/getting-started-with-static-blog.html">如何使用静态网站生成器创建个人博客</a></h3>
-                        <p>本文将详细介绍静态网站生成器的工作原理，以及如何使用它快速搭建一个美观、高效的博客系统...</p>
-                        <a href="posts/getting-started-with-static-blog.html" class="read-more">阅读全文 →</a>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-meta">
-                            <span class="category">生活技巧</span>
-                            <time datetime="2025-03-20">2025-03-20</time>
-                        </div>
-                        <h3><a href="posts/productivity-hacks-2025.html">2025年提高工作效率的10个实用技巧</a></h3>
-                        <p>在快节奏的现代生活中，如何高效管理时间、保持专注并完成任务？本文将分享经过实践验证的时间管理方法...</p>
-                        <a href="posts/productivity-hacks-2025.html" class="read-more">阅读全文 →</a>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-meta">
-                            <span class="category">创意项目</span>
-                            <time datetime="2025-03-15">2025-03-15</time>
-                        </div>
-                        <h3><a href="posts/diy-smart-home.html">DIY智能家居：用Raspberry Pi打造家庭自动化系统</a></h3>
-                        <p>通过树莓派和开源软件，你可以创建自己的智能家居系统，控制灯光、温度、安防等设备，同时保护隐私...</p>
-                        <a href="posts/diy-smart-home.html" class="read-more">阅读全文 →</a>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-meta">
-                            <span class="category">图书推荐</span>
-                            <time datetime="2025-03-10">2025-03-10</time>
-                        </div>
-                        <h3><a href="posts/book-review-deep-work.html">《深度工作》读后感：如何在分心的世界中保持专注</a></h3>
-                        <p>Cal Newport的《深度工作》教会我如何创造无干扰的工作环境，提升认知能力，并在专业领域取得卓越成就...</p>
-                        <a href="posts/book-review-deep-work.html" class="read-more">阅读全文 →</a>
-                    </article>
-                </div>
-            </section>
-
-            <section class="features">
-                <h2>🥑 博客特点</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <span class="feature-icon">🥑</span>
-                        <h3>营养满满</h3>
-                        <p>每篇文章都经过精心打磨，像牛油果一样营养丰富，干货满满，拒绝空洞内容。</p>
+        <section class="posts" id="posts">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Latest Post</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-meta">
+                        <span class="category">雅思备考</span>
+                        <time datetime="2025-04-24">April 24, 2025</time>
                     </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">🚀</span>
-                        <h3>快速上手</h3>
-                        <p>所有技术教程都提供可运行的代码片段，即学即用，快速应用到实际项目中。</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">🎨</span>
-                        <h3>清新设计</h3>
-                        <p>牛油果主题配色，护眼舒适，专注于内容阅读，给你最佳浏览体验。</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">🔄</span>
-                        <h3>持续更新</h3>
-                        <p>定期分享技术干货和生活感悟，像牛油果一样百搭，总有适合你的内容。</p>
-                    </div>
-                </div>
-            </section>
-        </div>
+                    <h3><a href="posts/ielts-experience.html">3个月雅思备考经验</a></h3>
+                    <p style="padding: 0 1rem; color: var(--text-light); margin-bottom: 1rem;">
+                        陈思豫的雅思首考心得分享，涵盖听力、阅读、写作、口语四个科目的备考策略，总分6.5。
+                    </p>
+                    <a href="posts/ielts-experience.html" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>关于博客</h4>
-                    <p>🥑 Avocado Blog —— 一个像牛油果一样营养丰富、内外兼修的技术博客。分享编程技巧、生活感悟和创意项目。</p>
-                </div>
-                <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul>
-                        <li><a href="archives.html">文章归档</a></li>
-                        <li><a href="about.html">关于我</a></li>
-                        <li><a href="rss.xml">RSS订阅</a></li>
-                        <li><a href="tags.html">标签云</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>联系方式</h4>
-                    <ul>
-                        <li>Email: <a href="mailto:blog@example.com">blog@example.com</a></li>
-                        <li>GitHub: <a href="https://github.com/your-username">your-username</a></li>
-                        <li>Twitter: <a href="https://twitter.com/your-handle">@your-handle</a></li>
-                    </ul>
-                </div>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p><a href="https://github.com/yyyyuuuu28" target="_blank">GitHub</a></p>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 🥑  Avocado Blog. All rights reserved. | Made with 💚 and 🥑</p>
+                <p>My Blog</p>
             </div>
         </div>
     </footer>
